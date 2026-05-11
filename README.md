@@ -1,10 +1,10 @@
 # Samtou Kerebor — Portfolio Data & BI
 
-Portfolio personnel de **Samtou Kerebor**, orienté **Business Data Analyst**, **Qualité Fournisseurs**, **Power BI**, **Python** et **SQL**.
+Landing page professionnelle pour le portfolio de **Samtou Kerebor**, orienté **Business Data Analyst**, **Qualité Fournisseurs**, **Power BI**, **Python** et **SQL**.
 
-## Aperçu
+## Déploiement
 
-Ce dépôt contient une landing page professionnelle publiée via GitHub Pages.
+Le site est prévu pour être publié sur **GitHub Pages**.
 
 ## Structure
 
