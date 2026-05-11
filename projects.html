@@ -1,76 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projets — Samtou Kerebor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Samtou Kerebor</title>
+  <meta name="description" content="Sélection de projets data, BI et performance de Samtou Kerebor : dashboards, modélisation, automatisation et analyse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Samtou Kerebor</a>
-      <nav class="nav">
-        <a href="about.html">À propos</a>
-        <a href="projects.html" aria-current="page">Projets</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">SK</span>
+          <span class="brand-text">Samtou Kerebor</span>
+        </a>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Projets</p>
-        <h1>Réalisations et cas d’usage</h1>
-        <p class="page-intro">
-          Cette page me permettra de présenter mes projets de manière claire : contexte, objectifs, outils utilisés et résultats obtenus.
-        </p>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="about.html">À propos</a>
+          <a class="nav-link active" href="projects.html">Projets</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="contact.html">Échanger</a>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
-      <div class="container cards-grid">
-        <article class="project-card">
-          <span class="card-tag">Power BI</span>
-          <h3>Dashboard qualité fournisseurs</h3>
-          <p>
-            Visualisation des KPI de performance fournisseurs avec une mise en page claire pour les équipes métier.
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="section-kicker">Projets</p>
+          <h1>Une base portfolio pensée pour accueillir des cas concrets, des visuels et des démonstrations</h1>
+          <p class="page-intro">
+            Cette section est structurée comme une vitrine évolutive. Elle permet d’ajouter facilement de nouveaux
+            projets, des captures de tableaux de bord, des notes de cadrage, des extraits de code ou encore des documents à télécharger.
           </p>
-          <div class="meta">
-            <span class="card-tag">KPI</span>
-            <span class="card-tag">DAX</span>
-            <span class="card-tag">Reporting</span>
-          </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="project-card">
-          <span class="card-tag">Data model</span>
-          <h3>Modélisation et fiabilisation des données</h3>
-          <p>
-            Construction d’un modèle de données robuste pour faciliter l’analyse et la maintenance du reporting.
-          </p>
-          <div class="meta">
-            <span class="card-tag">Power Query</span>
-            <span class="card-tag">SQL</span>
-            <span class="card-tag">Qualité</span>
-          </div>
-        </article>
+      <section class="section">
+        <div class="container projects-grid">
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/img/project-1.jpg" alt="Aperçu du projet Supplier Quality Dashboard" />
+              <div class="project-placeholder">
+                <span>Visuel projet / dashboard</span>
+              </div>
+            </div>
 
-        <article class="project-card">
-          <span class="card-tag">Automation</span>
-          <h3>Traitements et automatisations</h3>
-          <p>
-            Études et scripts pour fluidifier certaines tâches récurrentes de préparation et de suivi.
-          </p>
-          <div class="meta">
-            <span class="card-tag">Python</span>
-            <span class="card-tag">Excel</span>
-            <span class="card-tag">ETL</span>
+            <div class="project-content">
+              <div class="project-header">
+                <p class="project-overline">Projet 01</p>
+                <h2>Supplier Quality Dashboard</h2>
+              </div>
+
+              <p class="project-summary">
+                Conception d’un tableau de bord orienté suivi de performance fournisseurs, avec visualisation des
+                non-conformités, tendances, priorités d’action et lecture synthétique des KPI.
+              </p>
+
+              <p class="project-impact">
+                <strong>Objectif :</strong> rendre la performance qualité plus lisible et soutenir un suivi plus réactif des écarts.
+              </p>
+
+              <div class="tag-group">
+                <span class="tag">Power BI</span>
+                <span class="tag">KPI</span>
+                <span class="tag">Qualité fournisseurs</span>
+                <span class="tag">Reporting</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-tertiary" href="#">Étude de cas à venir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/img/project-2.jpg" alt="Aperçu du projet Data Modeling and Reliability" />
+              <div class="project-placeholder">
+                <span>Schéma, capture ou visuel analytique</span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <p class="project-overline">Projet 02</p>
+                <h2>Data Modeling and Reliability</h2>
+              </div>
+
+              <p class="project-summary">
+                Travail de structuration de données pour fiabiliser les analyses, harmoniser les indicateurs
+                et améliorer la cohérence entre sources, règles métier et restitution finale.
+              </p>
+
+              <p class="project-impact">
+                <strong>Objectif :</strong> construire une base analytique plus robuste pour des décisions mieux informées.
+              </p>
+
+              <div class="tag-group">
+                <span class="tag">SQL</span>
+                <span class="tag">Data quality</span>
+                <span class="tag">Modélisation</span>
+                <span class="tag">Fiabilité</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-tertiary" href="#">Détail du projet à venir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/img/project-3.jpg" alt="Aperçu du projet Automation and Analytics" />
+              <div class="project-placeholder">
+                <span>Code, workflow ou résultat analytique</span>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <p class="project-overline">Projet 03</p>
+                <h2>Automation and Analytics</h2>
+              </div>
+
+              <p class="project-summary">
+                Mise en place d’automatisations ciblées pour réduire les tâches répétitives, accélérer la production
+                d’analyses et améliorer la disponibilité des informations utiles au pilotage.
+              </p>
+
+              <p class="project-impact">
+                <strong>Objectif :</strong> gagner en efficacité opérationnelle tout en renforçant la qualité des restitutions.
+              </p>
+
+              <div class="tag-group">
+                <span class="tag">Python</span>
+                <span class="tag">Automatisation</span>
+                <span class="tag">Analytics</span>
+                <span class="tag">Productivité</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-tertiary" href="#">Documentation à venir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Architecture évolutive</p>
+            <h2>Une trame prête pour enrichir chaque projet dans le temps</h2>
           </div>
-        </article>
+
+          <div class="future-grid">
+            <article class="card">
+              <h3>Études de cas</h3>
+              <p>Contexte, problématique, démarche, résultats, enseignements et perspectives.</p>
+            </article>
+
+            <article class="card">
+              <h3>Captures & visuels</h3>
+              <p>Dashboards, maquettes, graphiques, workflows ou schémas d’architecture data.</p>
+            </article>
+
+            <article class="card">
+              <h3>Extraits de code</h3>
+              <p>Scripts SQL ou Python, exemples de transformation, logique de calcul et automatisations.</p>
+            </article>
+
+            <article class="card">
+              <h3>Documents téléchargeables</h3>
+              <p>PDF de synthèse, cas d’usage, présentation projet ou note méthodologique.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">SK</span>
+            <span class="brand-text">Samtou Kerebor</span>
+          </a>
+          <p class="footer-text">
+            Une collection de projets conçue pour grandir avec les usages, les visuels et les cas réels.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
+  </div>
 </body>
 </html>
