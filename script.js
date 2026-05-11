@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const email = "samtou.kerebor@email.com";
+    const email = "kerebors@gmail.com";
     const mailtoLink =
       "mailto:" +
       email +
