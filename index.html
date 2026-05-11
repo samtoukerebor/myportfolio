@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio de Samtou Kerebor — Business Data Analyst | Qualité Fournisseurs | Power BI | Python | SQL" />
   <title>Samtou Kerebor — Portfolio Data & BI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,7 +19,7 @@
       <nav class="nav">
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
-        <a href="#experience">Parcours</a>
+        <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -25,129 +28,150 @@
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-content">
+        <div class="hero-copy">
           <p class="eyebrow">Portfolio Data & BI</p>
           <h1>Samtou Kerebor</h1>
-          <h2>Business Data Analyst | Qualité Fournisseurs | Power BI | Python | SQL</h2>
+          <p class="subtitle">Business Data Analyst | Qualité Fournisseurs | Power BI | Python | SQL</p>
 
-          <p class="lead">
-            Je conçois des solutions de reporting et de pilotage autour de la donnée, avec une approche orientée qualité, clarté et impact métier.
+          <p class="hero-text">
+            Je transforme des données brutes en indicateurs clairs, fiables et utiles à la décision. Mon approche relie la qualité des données, le reporting et la compréhension métier.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Me contacter</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samtoukerebor" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/samtoukerebor" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
+
+          <ul class="quick-facts">
+            <li>Power BI & DAX</li>
+            <li>Excel / Power Query</li>
+            <li>SQL & Python</li>
+          </ul>
         </div>
 
-        <div class="hero-photo">
-          <img src="assets/img/photo.jpg" alt="Photo de Samtou Kerebor" />
+        <div class="hero-media">
+          <div class="photo-frame">
+            <img src="assets/img/photo.jpg" alt="Photo de Samtou Kerebor" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section section-soft" id="about">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Présentation</p>
-          <h3>À propos</h3>
+        <div class="section-head">
+          <p class="eyebrow">À propos</p>
+          <h2>Un profil à la croisée de la data et de la qualité</h2>
         </div>
 
-        <div class="card">
+        <div class="card card-large">
           <p>
-            Mon parcours combine <strong>analyse de données</strong>, <strong>qualité fournisseurs</strong> et <strong>business intelligence</strong>.
-            J’interviens sur la préparation des données, la modélisation, la création de dashboards et la fiabilisation du reporting.
+            Je travaille actuellement sur des sujets liés à la performance fournisseurs, à la fiabilisation des bases de données et à la création de tableaux de bord orientés pilotage.
           </p>
           <p>
-            L’objectif de ce portfolio est de rassembler mes projets, mes compétences et mes réalisations dans un espace simple, lisible et évolutif.
+            Mon objectif est simple : concevoir des solutions de reporting robustes, lisibles et actionnables, qui aident les équipes à prendre de meilleures décisions.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="skills">
+    <section class="section" id="skills">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Expertise</p>
-          <h3>Compétences principales</h3>
+        <div class="section-head">
+          <p class="eyebrow">Compétences</p>
+          <h2>Ce que je maîtrise</h2>
         </div>
 
-        <div class="grid cards-3">
-          <article class="card">
-            <h4>Data & BI</h4>
-            <p>Power BI, modélisation, DAX, Power Query, reporting, KPI et scorecards.</p>
+        <div class="cards-grid">
+          <article class="skill-card">
+            <span class="card-tag">BI</span>
+            <h3>Business Intelligence</h3>
+            <p>Power BI, modélisation, DAX, Power Query, dashboards, KPI, scorecards.</p>
           </article>
 
-          <article class="card">
-            <h4>Analyse & automatisation</h4>
-            <p>Python, SQL, Excel avancé, préparation de données et fiabilisation des traitements.</p>
+          <article class="skill-card">
+            <span class="card-tag">Data</span>
+            <h3>Analyse & préparation</h3>
+            <p>Excel avancé, SQL, Python, structuration des données, nettoyage et automatisation.</p>
           </article>
 
-          <article class="card">
-            <h4>Qualité fournisseurs</h4>
-            <p>Suivi de performance, bases de données qualité, reporting opérationnel et support aux équipes métier.</p>
+          <article class="skill-card">
+            <span class="card-tag">Qualité</span>
+            <h3>Qualité fournisseurs</h3>
+            <p>Suivi de performance, fiabilisation des bases, reporting qualité et support métier.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
+    <section class="section section-soft" id="projects">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Parcours</p>
-          <h3>Expérience & orientation</h3>
+        <div class="section-head">
+          <p class="eyebrow">Projets</p>
+          <h2>Une vitrine à enrichir progressivement</h2>
         </div>
 
-        <div class="timeline card">
-          <div class="timeline-item">
-            <h4>Business Data Analyst — Qualité Fournisseurs</h4>
-            <p>
-              Construction de chaînes de données de bout en bout, développement de dashboards Power BI,
-              monitoring des rapports et accompagnement des équipes dans l’usage des indicateurs.
-            </p>
+        <div class="timeline card card-large">
+          <div class="timeline-row">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Dashboard qualité fournisseurs</h3>
+              <p>Suivi des indicateurs de performance et visualisations destinées aux équipes opérationnelles.</p>
+            </div>
           </div>
 
-          <div class="timeline-item">
-            <h4>Orientation future</h4>
-            <p>
-              Développer des projets data, partager des études de cas et documenter progressivement mes réalisations en BI et analyse.
-            </p>
+          <div class="timeline-row">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Modèle de données Power BI</h3>
+              <p>Conception d’un modèle propre pour fiabiliser le reporting et la lecture des indicateurs.</p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Études de cas à venir</h3>
+              <p>Tu pourras ajouter ici tes projets data, automatisations, analyses ou cas d’usage métiers.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="contact">
+    <section class="section" id="contact">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Contact</p>
-          <h3>Entrer en relation</h3>
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Me contacter simplement</h2>
         </div>
 
         <div class="contact-grid">
           <div class="card">
-            <h4>Coordonnées</h4>
+            <h3>Coordonnées</h3>
             <p><strong>Email :</strong> kerebors@gmail.com</p>
             <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/samtoukerebor" target="_blank" rel="noreferrer">samtoukerebor</a></p>
-            <p><strong>Site :</strong> <a href="https://samtoukerebor.github.io/myportfolio/" target="_blank" rel="noreferrer">myportfolio</a></p>
+            <p><strong>Portfolio :</strong> <a href="https://samtoukerebor.github.io/myportfolio/" target="_blank" rel="noreferrer">myportfolio</a></p>
           </div>
 
-          <div class="card contact-box">
-            <h4>Me contacter</h4>
-            <p>Ouvre un email pré-rempli dans ta messagerie.</p>
+          <div class="card contact-card">
+            <h3>Ouvrir un message</h3>
+            <p>Le bouton ci-dessous ouvre ta messagerie avec un message pré-rempli.</p>
 
-            <div class="dialog">
-              <label for="subject">Sujet</label>
-              <input id="subject" type="text" value="Contact via le portfolio" />
+            <div class="contact-form">
+              <div>
+                <label for="subject">Sujet</label>
+                <input id="subject" type="text" value="Contact via le portfolio" />
+              </div>
 
-              <label for="message">Message</label>
-              <textarea id="message" rows="5">Bonjour Samtou,
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" rows="6">Bonjour Samtou,
 
 Je souhaite échanger avec toi au sujet de ton portfolio.</textarea>
+              </div>
 
-              <button class="btn btn-primary full-width" id="mailtoBtn" type="button">
-                Ouvrir ma boîte mail
-              </button>
+              <button class="btn btn-primary btn-full" id="mailtoBtn" type="button">Ouvrir ma boîte mail</button>
             </div>
           </div>
         </div>
@@ -158,7 +182,7 @@ Je souhaite échanger avec toi au sujet de ton portfolio.</textarea>
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Samtou Kerebor</p>
-      <p>Portfolio Data & BI</p>
+      <p>Business Data Analyst | Qualité Fournisseurs</p>
     </div>
   </footer>
 
