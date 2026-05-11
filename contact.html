@@ -1,76 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Samtou Kerebor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Samtou Kerebor</title>
+  <meta name="description" content="Contacter Samtou Kerebor pour échanger autour de la data, de la BI, du reporting et de la qualité fournisseurs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Samtou Kerebor</a>
-      <nav class="nav">
-        <a href="about.html">À propos</a>
-        <a href="projects.html">Projets</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">SK</span>
+          <span class="brand-text">Samtou Kerebor</span>
+        </a>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1>Entrer en relation</h1>
-        <p class="page-intro">
-          Pour me contacter rapidement, utilise le bouton ci-dessous : il ouvrira ta messagerie avec un message pré-rempli.
-        </p>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" href="about.html">À propos</a>
+          <a class="nav-link" href="projects.html">Projets</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="contact.html">Échanger</a>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
-      <div class="container contact-grid">
-        <div class="card">
-          <h3>Coordonnées</h3>
-          <p><strong>Email :</strong> kerebors@gmail.com</p>
-          <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/samtoukerebor" target="_blank" rel="noreferrer">samtoukerebor</a></p>
-          <p><strong>Portfolio :</strong> <a href="https://samtoukerebor.github.io/myportfolio/" target="_blank" rel="noreferrer">myportfolio</a></p>
+    <main>
+      <section class="page-hero page-hero-compact">
+        <div class="container">
+          <p class="section-kicker">Contact</p>
+          <h1>Entrer en contact simplement, dans un cadre clair et professionnel</h1>
+          <p class="page-intro narrow">
+            Pour une opportunité, une collaboration, une mission ou un échange autour de la donnée et du pilotage,
+            vous pouvez me joindre directement via les coordonnées ci-dessous ou utiliser le formulaire.
+          </p>
         </div>
+      </section>
 
-        <div class="card contact-card">
-          <h3>Message rapide</h3>
-          <div class="contact-form">
-            <div>
-              <label for="subject">Sujet</label>
-              <input id="subject" type="text" value="Contact via le portfolio" />
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="card card-emphasis">
+            <h2>Coordonnées</h2>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:samtou.kerebor@email.com">samtou.kerebor@email.com</a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">linkedin.com/in/samtou-kerebor</a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Portfolio</span>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/samtou-kerebor</a>
+              </div>
             </div>
 
-            <div>
-              <label for="message">Message</label>
-              <textarea id="message" rows="6">Bonjour Samtou,
+            <p class="contact-note">
+              Remplacez ces liens par vos coordonnées réelles avant la mise en ligne.
+            </p>
+          </aside>
 
-Je souhaite échanger avec toi au sujet de ton portfolio.</textarea>
-            </div>
+          <section class="card contact-form-card">
+            <h2>Envoyer un message</h2>
+            <p class="form-intro">
+              Le formulaire ouvre votre client email par défaut, sans dépendance serveur.
+            </p>
 
-            <button class="btn btn-primary btn-full" id="mailtoBtn" type="button">Ouvrir ma boîte mail</button>
-          </div>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="subject">Objet</label>
+                <input id="subject" name="subject" type="text" placeholder="Exemple : Opportunité / Collaboration / Question" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="8" placeholder="Bonjour Samtou, je vous contacte au sujet de..." required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Ouvrir mon email</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark">SK</span>
+            <span class="brand-text">Samtou Kerebor</span>
+          </a>
+          <p class="footer-text">
+            Une présence claire, élégante et prête à accueillir de futurs échanges professionnels.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
+  </div>
 
-  <script>
-    const mailtoBtn = document.getElementById("mailtoBtn");
-    const subjectInput = document.getElementById("subject");
-    const messageInput = document.getElementById("message");
-    const recipient = "kerebors@gmail.com";
-
-    mailtoBtn.addEventListener("click", () => {
-      const subject = encodeURIComponent(subjectInput.value);
-      const body = encodeURIComponent(messageInput.value);
-      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
