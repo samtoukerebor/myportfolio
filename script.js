@@ -1,23 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
 
   if (!form) return;
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const subject = document.getElementById("subject").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const subjectInput = document.getElementById("subject");
+    const messageInput = document.getElementById("message");
+
+    if (!subjectInput || !messageInput) return;
+
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
 
     const email = "kerebors@gmail.com";
     const mailtoLink =
-      "mailto:" +
-      email +
-      "?subject=" +
-      encodeURIComponent(subject) +
-      "&body=" +
-      encodeURIComponent(message);
+      `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
     window.location.href = mailtoLink;
   });
-}); 
+});
