@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard qualité fournisseurs | Samtou Kerebor</title>
-  <meta name="description" content="Étude de cas : dashboard Power BI de suivi qualité fournisseurs, KPI, incidents, analyse et priorisation." />
+  <title>Bank Marketing Project | Samtou Kerebor</title>
+  <meta name="description" content="Étude de cas Bank Marketing : nettoyage, préparation, exploration et structuration d’un jeu de données bancaire avec Python." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -34,22 +34,22 @@
       <section class="page-hero">
         <div class="container">
           <p class="section-kicker">Étude de cas</p>
-          <h1>Dashboard de suivi qualité fournisseurs</h1>
+          <h1>Bank Marketing Project</h1>
           <p class="project-lead narrow">
-            Ce projet vise à rendre visible la performance fournisseurs à travers un tableau de bord
-            orienté pilotage, combinant incidents qualité, indicateurs clés et supports d’aide à la décision.
+            Ce projet porte sur la préparation, le nettoyage et l’exploration d’un jeu de données bancaire
+            afin d’identifier des patterns utiles à l’analyse d’une campagne marketing.
           </p>
 
           <div class="project-actions">
-            <a class="btn btn-primary" href="https://github.com/ton-compte/supplier-quality-dashboard" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub</a>
+            <a class="btn btn-primary" href="https://github.com/samtoukerebor/Bank-Marketing-Project" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub</a>
             <a class="btn btn-secondary" href="../projects.html">Retour aux projets</a>
           </div>
 
           <div class="project-meta">
-            <span class="meta-chip">Power BI</span>
-            <span class="meta-chip">SQL</span>
-            <span class="meta-chip">Qualité fournisseurs</span>
-            <span class="meta-chip">KPI</span>
+            <span class="meta-chip">Python</span>
+            <span class="meta-chip">Pandas</span>
+            <span class="meta-chip">Préprocessing</span>
+            <span class="meta-chip">EDA</span>
           </div>
         </div>
       </section>
@@ -57,8 +57,8 @@
       <section class="section">
         <div class="container project-page-layout">
           <div class="project-main-visual">
-            <!-- Remplacer par une capture -->
-            <!-- <img src="../assets/img/supplier-quality-cover.jpg" alt="Aperçu du dashboard qualité fournisseurs" /> -->
+            <!-- Option 1 : image locale -->
+            <!-- <img src="../assets/img/bank-marketing-cover.jpg" alt="Aperçu du projet Bank Marketing" /> -->
           </div>
 
           <aside class="project-sidebar">
@@ -67,19 +67,19 @@
               <div class="project-info-list">
                 <div class="project-info-item">
                   <span>Type</span>
-                  <strong>Dashboard analytique</strong>
+                  <strong>Étude de données / prétraitement</strong>
                 </div>
                 <div class="project-info-item">
                   <span>Outils</span>
-                  <strong>Power BI, SQL, Excel</strong>
+                  <strong>Python, Pandas, notebooks Jupyter</strong>
                 </div>
                 <div class="project-info-item">
                   <span>Objectif</span>
-                  <strong>Suivre la performance qualité et prioriser les actions</strong>
+                  <strong>Structurer les données et préparer une base d’analyse fiable</strong>
                 </div>
                 <div class="project-info-item">
-                  <span>Livrables</span>
-                  <strong>Dashboard, structure KPI, documentation</strong>
+                  <span>Repository</span>
+                  <strong>Bank-Marketing-Project</strong>
                 </div>
               </div>
             </article>
@@ -87,8 +87,7 @@
             <article class="card card-emphasis">
               <h3>Liens</h3>
               <div class="project-links">
-                <a class="project-link" href="https://github.com/ton-compte/supplier-quality-dashboard" target="_blank" rel="noopener noreferrer">Dépôt GitHub</a>
-                <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">Démo / aperçu</a>
+                <a class="project-link" href="https://github.com/samtoukerebor/Bank-Marketing-Project" target="_blank" rel="noopener noreferrer">Dépôt GitHub</a>
               </div>
             </article>
           </aside>
@@ -100,16 +99,17 @@
           <article class="card card-large">
             <h2>Contexte</h2>
             <p>
-              Le besoin initial était d’améliorer la visibilité sur les non-conformités fournisseurs
-              et de disposer d’un support clair pour piloter la qualité dans le temps.
+              Le projet repose sur un dataset bancaire composé de variables socio-démographiques,
+              financières et comportementales. L’enjeu principal est de rendre ces données exploitables
+              et cohérentes pour une analyse ultérieure.
             </p>
           </article>
 
           <article class="card card-large">
-            <h2>Approche</h2>
+            <h2>Objectif</h2>
             <p>
-              La démarche a consisté à structurer les sources, définir des indicateurs fiables,
-              puis construire une restitution visuelle orientée lecture rapide et décision.
+              L’objectif est de préparer une base de travail propre, de mieux comprendre la structure du dataset
+              et d’identifier les éléments pertinents pour l’analyse de la réponse à une campagne marketing.
             </p>
           </article>
         </div>
@@ -119,23 +119,23 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Résultats</p>
-            <h2>Ce que le projet permet de faire</h2>
+            <h2>Ce que le projet met en place</h2>
           </div>
 
           <div class="metrics-grid">
             <article class="metric-card">
-              <strong>+ visibilité</strong>
-              <p>Lecture synthétique des incidents et de leur évolution.</p>
+              <strong>dataset propre</strong>
+              <p>Préparation et nettoyage des données pour réduire les incohérences et faciliter l’exploitation.</p>
             </article>
 
             <article class="metric-card">
-              <strong>+ priorisation</strong>
-              <p>Identification plus rapide des fournisseurs ou familles critiques.</p>
+              <strong>structure claire</strong>
+              <p>Organisation du projet avec séparation des données brutes, nettoyées, scripts et notebooks.</p>
             </article>
 
             <article class="metric-card">
-              <strong>+ fiabilité</strong>
-              <p>Indicateurs cohérents et base structurée pour le suivi.</p>
+              <strong>base d’analyse</strong>
+              <p>Création d’un socle exploitable pour des analyses plus poussées ou pour une future modélisation.</p>
             </article>
           </div>
         </div>
@@ -145,29 +145,37 @@
         <div class="container">
           <article class="card card-large">
             <p class="section-kicker">Fonctionnement</p>
-            <h2>Comment ça marche</h2>
+            <h2>Comment le projet est structuré</h2>
 
             <div class="project-content-block">
-              <h3>1. Préparation des données</h3>
+              <h3>1. Données sources</h3>
               <p>
-                Les données sont collectées, nettoyées et harmonisées afin de produire
-                une base exploitable pour l’analyse.
+                Le dossier de données contient les fichiers bruts à partir desquels le projet est construit.
+                Ces sources sont conservées séparément des versions transformées pour préserver la traçabilité.
               </p>
             </div>
 
             <div class="project-content-block">
-              <h3>2. Structuration des KPI</h3>
+              <h3>2. Préprocessing & cleaning</h3>
               <p>
-                Une logique d’indicateurs est définie pour suivre les incidents, les volumes,
-                les tendances et les signaux prioritaires.
+                Les scripts Python prennent en charge le nettoyage, la transformation et la préparation
+                des colonnes nécessaires à une analyse plus robuste.
               </p>
             </div>
 
             <div class="project-content-block">
-              <h3>3. Restitution visuelle</h3>
+              <h3>3. Exploration</h3>
               <p>
-                Le dashboard synthétise les informations clés avec une hiérarchie claire,
-                afin de faciliter la lecture et la prise de décision.
+                Les notebooks permettent d’examiner la distribution des variables, les corrélations potentielles
+                et les grandes tendances du dataset.
+              </p>
+            </div>
+
+            <div class="project-content-block">
+              <h3>4. Structuration du repo</h3>
+              <p>
+                Le projet est organisé avec des dossiers dédiés aux données, aux scripts, aux notebooks
+                et aux exports, afin de rendre le travail plus lisible et maintenable.
               </p>
             </div>
           </article>
@@ -183,7 +191,7 @@
             <span class="brand-text">Samtou Kerebor</span>
           </a>
           <p class="footer-text">
-            Des projets présentés comme des cas concrets, documentés et orientés impact.
+            Des projets présentés comme des cas concrets, documentés et reliés à leur dépôt GitHub.
           </p>
         </div>
 
