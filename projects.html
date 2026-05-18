@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projets | Samtou Kerebor</title>
-  <meta name="description" content="Projets de Samtou Kerebor : dashboards, reporting, analyse de données et automatisation." />
+  <meta name="description" content="Projets de Samtou Kerebor : Power BI, SQL, Python, analyse métier et qualité fournisseurs." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -31,13 +31,13 @@
     </header>
 
     <main>
-      <section class="page-hero page-hero-compact">
+      <section class="page-hero">
         <div class="container">
           <p class="section-kicker">Projets</p>
-          <h1>Une vitrine pour présenter mes réalisations data et BI</h1>
+          <h1>Des projets data pensés comme des cas concrets, lisibles et évolutifs</h1>
           <p class="page-intro narrow">
-            Cette page accueillera progressivement mes projets, visuels, codes et études de cas.
-            Chaque projet pourra être enrichi avec des captures, un contexte métier et des résultats.
+            Chaque projet dispose d’un espace dédié pour présenter le contexte, la démarche,
+            les outils mobilisés, les résultats obtenus et le lien vers le dépôt GitHub associé.
           </p>
         </div>
       </section>
@@ -46,23 +46,59 @@
         <div class="container projects-grid">
 
           <article class="project-card">
-            <div class="project-visual"></div>
+            <div class="project-visual">
+              <!-- Remplacer par une image plus tard -->
+            </div>
             <div class="project-content">
-              <span class="project-overline">Data modeling</span>
+              <span class="project-overline">Power BI • SQL • Qualité fournisseurs</span>
               <div class="project-header">
-                <h2>Modélisation et fiabilisation</h2>
+                <h2>Dashboard de suivi qualité fournisseurs</h2>
               </div>
               <p class="project-summary">
-                Structuration des données, nettoyage des sources et mise en place d’un modèle cohérent pour l’analyse.
+                Construction d’un tableau de bord pour visualiser la performance fournisseurs,
+                analyser les incidents qualité et mieux prioriser les actions correctives.
               </p>
+
               <div class="tag-group">
+                <span class="tag">Power BI</span>
                 <span class="tag">SQL</span>
-                <span class="tag">Power Query</span>
+                <span class="tag">KPI</span>
                 <span class="tag">Qualité</span>
+              </div>
+
+              <div class="project-links">
+                <a class="btn btn-primary" href="projects/supplier-quality.html">Voir le détail</a>
+                <a class="btn btn-secondary" href="https://github.com/ton-compte/supplier-quality-dashboard" target="_blank" rel="noopener noreferrer">Voir GitHub</a>
               </div>
             </div>
           </article>
-          
+
+          <article class="project-card">
+            <div class="project-visual"></div>
+            <div class="project-content">
+              <span class="project-overline">Python • Data cleaning • Analyse</span>
+              <div class="project-header">
+                <h2>Préparation et fiabilisation d’un jeu de données</h2>
+              </div>
+              <p class="project-summary">
+                Nettoyage, transformation et contrôle qualité d’une source de données
+                pour produire une base exploitable dans un reporting décisionnel.
+              </p>
+
+              <div class="tag-group">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Nettoyage</span>
+                <span class="tag">Fiabilité</span>
+              </div>
+
+              <div class="project-links">
+                <a class="btn btn-primary" href="projects/python-cleaning.html">Voir le détail</a>
+                <a class="btn btn-secondary" href="https://github.com/ton-compte/python-cleaning-project" target="_blank" rel="noopener noreferrer">Voir GitHub</a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
     </main>
@@ -75,7 +111,7 @@
             <span class="brand-text">Samtou Kerebor</span>
           </a>
           <p class="footer-text">
-            Les projets viendront enrichir cette page au fil du temps.
+            Chaque projet est présenté comme un cas documenté, avec contexte, méthode, résultats et accès au code.
           </p>
         </div>
 
