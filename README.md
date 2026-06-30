@@ -1,6 +1,6 @@
 # Samtou Kerebor — Portfolio Data & BI
 
-Portfolio personnel de **Samtou Kerebor**, orienté **Business Data Analyst**, **Qualité Fournisseurs**, **Power BI**, **Python** et **SQL**.
+Portfolio personnel de **Samtou Kerebor**, orienté **Business Data Analyst**, **Power BI**, **Python** et **SQL**.
 
 ## Pages
 
