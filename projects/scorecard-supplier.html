@@ -1,40 +1,226 @@
-<section class="section">
-  <div class="container">
-    <div class="section-heading section-heading-compact">
-      <p class="section-kicker">Aperçus du projet</p>
-      <h2>Modèle de données et dashboard final</h2>
-      <p class="project-lead narrow">
-        Par souci de confidentialité, le rapport complet n’est pas publié en ligne.
-        Les visuels ci-dessous montrent la structure du modèle et un aperçu du dashboard final.
-      </p>
-    </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supplier Scorecard | Samtou Kerebor</title>
+  <meta
+    name="description"
+    content="Étude de cas Power BI sur la création d’une scorecard fournisseurs : préparation des données, modélisation, KPI métier, dashboard interactif et sécurisation des accès."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">SK</span>
+          <span class="brand-text">Samtou Kerebor</span>
+        </a>
 
-    <div class="project-visual-grid">
-      <figure class="project-visual-card">
-        <div class="project-visual-frame">
-          <img
-            src="../assets/img/model-view-scorecard.jpg"
-            alt="Vue du modèle de données dans Power BI Desktop pour le projet Supplier Scorecard"
-          />
-        </div>
-        <figcaption>
-          <h3>Modèle de données</h3>
-          <p>Structuration des tables, relations métier et préparation du socle analytique.</p>
-        </figcaption>
-      </figure>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a class="nav-link" href="../index.html">Accueil</a>
+          <a class="nav-link" href="../about.html">CV</a>
+          <a class="nav-link active" href="../projects.html">Projets</a>
+          <a class="nav-link" href="../contact.html">Contact</a>
+        </nav>
 
-      <figure class="project-visual-card">
-        <div class="project-visual-frame">
-          <img
-            src="../assets/img/page1-scorecard.jpg"
-            alt="Capture du dashboard final Supplier Scorecard dans Power BI"
-          />
+        <a class="nav-cta" href="../contact.html">Échanger</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero project-hero-compact">
+        <div class="container">
+          <p class="section-kicker">Étude de cas · Projet phare</p>
+          <h1>Supplier Scorecard</h1>
+          <p class="project-lead narrow">
+            Conception d’une scorecard fournisseurs sous Power BI à partir de données industrielles anonymisées.
+            Le projet a pour objectif de rendre l’évaluation des fournisseurs plus lisible, plus rapide et plus fiable.
+          </p>
+
+          <div class="project-actions">
+            <a class="btn btn-secondary" href="../projects.html">Retour aux projets</a>
+          </div>
+
+          <div class="project-meta">
+            <span class="meta-chip">Power BI</span>
+            <span class="meta-chip">Power Query</span>
+            <span class="meta-chip">Prétraitement</span>
+            <span class="meta-chip">DAX</span>
+            <span class="meta-chip">Data Visualisation</span>
+            <span class="meta-chip">RLS</span>
+          </div>
         </div>
-        <figcaption>
-          <h3>Dashboard final</h3>
-          <p>Rapport interactif orienté pilotage, suivi des KPI et lecture de la performance fournisseurs.</p>
-        </figcaption>
-      </figure>
-    </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-page-layout">
+          <div class="project-main-visual">
+            <img
+              src="../assets/img/scorecard-images-cover.jpg"
+              alt="Aperçu du projet Supplier Scorecard"
+            />
+          </div>
+
+          <aside class="project-sidebar">
+            <article class="card">
+              <h3>Informations clés</h3>
+              <div class="project-info-list">
+                <div class="project-info-item">
+                  <span>Type</span>
+                  <strong>Dashboard décisionnel et KPI fournisseurs</strong>
+                </div>
+                <div class="project-info-item">
+                  <span>Outils</span>
+                  <strong>Power BI, Power Query, SQL Server</strong>
+                </div>
+                <div class="project-info-item">
+                  <span>Périmètre</span>
+                  <strong>Transformation, modélisation, calculs DAX et restitution</strong>
+                </div>
+                <div class="project-info-item">
+                  <span>Publication</span>
+                  <strong>Projet confidentiel, non publié sur GitHub</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-emphasis">
+              <h3>Lecture rapide</h3>
+              <p class="project-summary">
+                Un projet centré sur la qualité des données, la lisibilité du modèle et l’efficacité du pilotage.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <article class="card card-large">
+            <h2>Contexte</h2>
+            <p>
+              Le projet s’appuie sur plusieurs sources de données liées aux fournisseurs de matières d’une entreprise industrielle.
+              Ces sources présentaient des structures hétérogènes et des règles de gestion spécifiques.
+              L’enjeu principal consistait à rapprocher les données, consolider les informations utiles
+              et construire une base analytique exploitable pour le suivi de la performance.
+            </p>
+          </article>
+
+          <article class="card card-large">
+            <h2>Objectif</h2>
+            <p>
+              L’objectif était d’automatiser l’évaluation des fournisseurs afin de fiabiliser l’analyse,
+              de réduire la charge de traitement manuel et d’améliorer la capacité de pilotage.
+              Le projet a permis de passer d’un traitement lourd à une démarche plus fluide et plus robuste.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading section-heading-compact">
+            <p class="section-kicker">Aperçus du projet</p>
+            <h2>Modèle de données et dashboard final</h2>
+            <p class="project-lead narrow">
+              Par souci de confidentialité, le rapport complet n’est pas publié en ligne.
+              Les visuels ci-dessous montrent la structure du modèle et un aperçu du dashboard final.
+            </p>
+          </div>
+
+          <div class="project-visual-grid">
+            <figure class="project-visual-card">
+              <div class="project-visual-frame">
+                <img
+                  src="../assets/img/model-view-scorecard.jpg"
+                  alt="Vue du modèle de données dans Power BI Desktop pour le projet Supplier Scorecard"
+                />
+              </div>
+              <figcaption>
+                <h3>Modèle de données</h3>
+                <p>Structuration des tables, relations métier et préparation du socle analytique.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="project-visual-card">
+              <div class="project-visual-frame">
+                <img
+                  src="../assets/img/page1-scorecard.jpg"
+                  alt="Capture du dashboard final Supplier Scorecard dans Power BI"
+                />
+              </div>
+              <figcaption>
+                <h3>Dashboard final</h3>
+                <p>Rapport interactif orienté pilotage, suivi des KPI et lecture de la performance fournisseurs.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <article class="card card-large">
+            <h2>Démarche</h2>
+            <ul class="project-list">
+              <li>Collecte et consolidation des données issues de différentes sources.</li>
+              <li>Nettoyage et harmonisation avec Power Query pour garantir une base cohérente.</li>
+              <li>Construction d’un modèle lisible et maintenable dans Power BI.</li>
+              <li>Développement des indicateurs, des visuels et de la sécurisation via RLS.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="card card-large">
+            <h2>Résultats</h2>
+            <ul class="project-list">
+              <li>Dataset préparé et fiabilisé pour réduire les incohérences.</li>
+              <li>Modèle analytique structuré entre sources, transformations et calculs métier.</li>
+              <li>Dashboard Power BI orienté pilotage et évaluation standardisée.</li>
+              <li>Gestion des accès par Row-Level Security pour protéger les données sensibles.</li>
+            </ul>
+
+            <p class="project-note">
+              La valeur principale du projet repose sur la clarté du modèle, la fiabilité des indicateurs
+              et la capacité à rendre l’évaluation plus simple à utiliser au quotidien.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="../index.html">
+            <span class="brand-mark">SK</span>
+            <span class="brand-text">Samtou Kerebor</span>
+          </a>
+          <p class="footer-text">
+            Des projets présentés comme des cas concrets, documentés avec sobriété et précision.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="../index.html">Accueil</a>
+          <a href="../about.html">CV</a>
+          <a href="../projects.html">Projets</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
   </div>
-</section>
+</body>
+</html>
