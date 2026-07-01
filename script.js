@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = messageInput.value.trim();
 
     const email = "kerebors@gmail.com";
-    const mailtoLink =
-      `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
     window.location.href = mailtoLink;
   });
