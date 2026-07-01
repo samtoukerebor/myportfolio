@@ -316,7 +316,8 @@ h4 {
 .projects-grid,
 .capabilities-grid,
 .timeline-grid,
-.metrics-grid {
+.metrics-grid,
+.skills-grid {
   display: grid;
   gap: 1.4rem;
 }
@@ -329,7 +330,8 @@ h4 {
 .about-grid,
 .contact-grid,
 .project-detail-grid,
-.two-column-section {
+.two-column-section,
+.skills-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -427,7 +429,8 @@ h4 {
 .project-card,
 .capability-card,
 .timeline-card,
-.metric-card {
+.metric-card,
+.skill-group {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -437,7 +440,8 @@ h4 {
 .card,
 .capability-card,
 .timeline-card,
-.metric-card {
+.metric-card,
+.skill-group {
   padding: 1.45rem;
 }
 
@@ -451,13 +455,15 @@ h4 {
 
 .capability-card,
 .card,
-.timeline-card {
+.timeline-card,
+.skill-group {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .capability-card:hover,
 .card:hover,
-.timeline-card:hover {
+.timeline-card:hover,
+.skill-group:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -478,6 +484,21 @@ h4 {
 
 .clean-list li + li {
   margin-top: 0.5rem;
+}
+
+/* Skills */
+.skills-grid {
+  margin-top: 0.5rem;
+}
+
+.skill-group h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+
+.skill-group p {
+  margin-bottom: 0;
+  color: var(--text-soft);
 }
 
 /* Panels */
@@ -734,7 +755,8 @@ textarea:focus {
   .project-gallery,
   .capabilities-grid,
   .timeline-grid,
-  .metrics-grid {
+  .metrics-grid,
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
@@ -794,6 +816,7 @@ textarea:focus {
   .capability-card,
   .timeline-card,
   .metric-card,
+  .skill-group,
   .project-content,
   .contact-form-card {
     padding: 1.15rem;
